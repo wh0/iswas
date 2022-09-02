@@ -1,0 +1,57 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>is⚡was</title>
+<style>
+  body {
+    max-width: 37.5rem;
+    font-family: sans-serif;
+  }
+  .md {
+    white-space: pre-wrap;
+  }
+  .md .repo {
+    color: #c00040;
+  }
+  .md .owner-repo {
+    color: #c00000;
+  }
+  .md .code {
+    background-color: #e0e0e0;
+  }
+  .preview {
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: #24292f;
+  }
+</style>
+<p><strong>GitHub repo</strong></p>
+<p>https://github.com/<input id="in-owner-repo" placeholder="owner/repo"></p>
+<p><strong>Code for README.md</strong></p>
+<pre class="md">
+<span class="repo">repo</span> <span class="code">![was](https://iswas.glitch.me/<span class="owner-repo">owner/repo</span>/light.svg#gh-light-mode-only)![was](https://iswas.glitch.me/<span class="owner-repo">owner/repo</span>/dark.svg#gh-dark-mode-only)</span> a project that ...
+</pre>
+<p><strong>Preview</strong></p>
+<p class="preview"><span class="repo">repo</span> <img id="preview-img" alt="was" src="light-was.svg"> a project that ...</p>
+<p><strong>Source</strong></p>
+<p><a href="https://github.com/wh0/iswas">https://github.com/wh0/iswas</a> <a href="https://glitch.com/edit/#!/iswas" style="text-decoration: none;">🎏</a></p>
+<script>
+  let debounceTimeout = 0;
+  document.getElementById('in-owner-repo').oninput = (e) => {
+    const ownerRepo = e.target.value || 'owner/repo';
+    for (const span of document.getElementsByClassName('owner-repo')) {
+      span.textContent = ownerRepo;
+    }
+    const split = ownerRepo.split('/');
+    const repo = split[1] || 'repo';
+    for (const span of document.getElementsByClassName('repo')) {
+      span.textContent = repo;
+    }
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(() => {
+      document.getElementById('preview-img').src = `${ownerRepo}/light.svg`;
+    }, 1000);
+  };
+</script>
