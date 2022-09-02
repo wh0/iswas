@@ -1,5 +1,5 @@
 # is⚡was
-[is⚡was](https://iswas.glitch.me/) ![was](https://iswas.glitch.me/wh0/iswas/light.svg#gh-light-mode-only)![was](https://iswas.glitch.me/wh0/iswas/dark.svg#gh-dark-mode-only) a service that generates little images that say either "is" or "was" based on whether a GitHub repository has been updated in the last 90 days (you know like those badges that say your CI is failing).
+[is⚡was](https://iswas.glitch.me/) <picture><source media="(prefers-color-scheme: dark)" srcset="https://iswas.glitch.me/wh0/iswas/dark.svg"><img alt="was" src="https://iswas.glitch.me/wh0/iswas/light.svg"></picture> a service that generates little images that say either "is" or "was" based on whether a GitHub repository has been updated in the last 90 days (you know like those badges that say your CI is failing).
 
 That way, you can have a README that says "Fooinator is a project that ..." now, but it'll automatically update to "Fooinator was a project that ..." when you inevitably abandon it for some other side project.
 
@@ -16,7 +16,7 @@ If this were an enterprise product, I feel like those would be in a paid tier.
 
 **How does it handle dark mode?**
 
-Behold! https://github.blog/changelog/2021-11-24-specify-theme-context-for-images-in-markdown/
+Behold! [Specifying the theme an image is shown to](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#specifying-the-theme-an-image-is-shown-to)
 
 **How did you come up with the image sizing and stuff?**
 
