@@ -11,3 +11,5 @@ i 258
 s 479
 w 786
 ```
+
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-anonymized-urls#removing-an-image-from-camos-cache
