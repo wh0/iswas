@@ -1,5 +1,5 @@
 # is⚡was
-[is⚡was](https://iswas.glitch.me/) <picture><source media="(prefers-color-scheme: dark)" srcset="https://iswas.glitch.me/wh0/iswas/dark.svg"><img alt="was" src="https://iswas.glitch.me/wh0/iswas/light.svg"></picture> a service that generates little images that say either "is" or "was" based on whether a GitHub repository has been updated in the last 90 days (you know like those badges that say your CI is failing).
+[is⚡was](https://iswas.glitch.me/) <picture><source media="(prefers-color-scheme: dark)" srcset="https://iswas.glitch.me/wh0/iswas/dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://iswas.glitch.me/wh0/iswas/light.svg"><img alt="was" src="https://iswas.glitch.me/wh0/iswas/light.svg"></picture> a service that generates little images that say either "is" or "was" based on whether a GitHub repository has been updated in the last 90 days (you know like those badges that say your CI is failing).
 
 That way, you can have a README that says "Fooinator is a project that ..." now, but it'll automatically update to "Fooinator was a project that ..." when you inevitably abandon it for some other side project.
 
