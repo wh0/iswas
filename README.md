@@ -20,7 +20,7 @@ Behold! [Specifying the theme an image is shown to](https://docs.github.com/en/g
 
 **How did you come up with the image sizing and stuff?**
 
-The numbers are based on metrics from Nimbus Roman, which I think is supposed to be compatible with Helvetica.
+The numbers are based on metrics from Noto Sans, which is one of the free fonts that GitHub uses.
 Check me on that though.
 
 **Does -apple-system really work in an img SVG?**
